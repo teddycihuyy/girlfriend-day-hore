@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Girlfriend Day Sayang</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Dancing+Script:wght@600&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: linear-gradient(135deg, #ffe4e9 0%, #ffd1dc 50%, #ffc2d1 100%);
+    font-family: 'Quicksand', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+.card {
+    background: #fff0f5;
+    padding: 35px 30px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 480px;
+    border: 1px solid #ffb3c6;
+    box-shadow: 0 10px 30px rgba(233, 30, 99, 0.1);
+  }
+
+  h1 {
+    font-family: 'Dancing Script', cursive;
+    color: #d81b60;
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+ .sub { color: #ad1457; font-size: 14px; margin-bottom: 20px; }
+
+  /* FOTO POLAROID */
+.polaroid {
+    background: white;
+    padding: 12px 12px 40px 12px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(216, 27, 96, 0.15);
+    transform: rotate(-3deg);
+    margin: 0 auto 25px;
+    width: 220px;
+    transition: 0.3s;
+  }
+.polaroid:hover { transform: rotate(0deg) scale(1.03); }
+.polaroid img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+.polaroid.caption {
+    font-family: 'Dancing Script', cursive;
+    color: #d81b60;
+    font-size: 18px;
+    margin-top: 8px;
+  }
+
+  /* DISPLAY ICON SVG PINK */
+.icon-display {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+  }
+.icon-display svg {
+    width: 28px;
+    height: 28px;
+    fill: #e91e63;
+    animation: bounce 2s ease-in-out infinite;
+  }
+.icon-display svg:nth-child(2){animation-delay: 0.2s}
+.icon-display svg:nth-child(3){animation-delay: 0.4s}
+.icon-display svg:nth-child(4){animation-delay: 0.6s}
+
+  @keyframes bounce {
+    0%,100%{transform: translateY(0)}
+    50%{transform: translateY(-8px)}
+  }
+
+  p {
+    color: #880e4f;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+
+.btn {
+    background: #e91e63;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 12px rgba(233, 30, 99, 0.3);
+  }
+.btn:hover {
+    background: #c2185b;
+    transform: translateY(-2px);
+  }
+</style>
+</head>
+<body>
+
+<div class="card">
+  <h1>Happy Girlfriend Day</h1>
+  <p class="sub">Untuk kamu yang paling spesial</p>
+
+  <!-- GANTI LINK FOTO DI SINI -->
+  <div class="polaroid">
+    <img src="https://cdn.phototourl.com/free/2026-08-01-e2937478-2e9c-4305-8947-1dcb68a08aff.jpg" alt="Foto kita">
+    <div class="caption">Fav Gurl🌷</div>
+  </div>
+
+  <div class="icon-display">
+    <!-- Heart -->
+    <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+    <!-- Ribbon -->
+    <svg viewBox="0 0 24 24"><path d="M21 7L13 2V5L5 12L13 19V16L21 9V7Z"/></svg>
+    <!-- Flower -->
+    <svg viewBox="0 0 24 24"><path d="M12 22C6.48 22 2 17.52 2 12S6.48 2 12 2s10 4.48 10 10-4.48 10-10 10zm0-18C7.59 4 4 7.59 4 12s3.59 8 8 8 8-3.59 8-8-3.59-8-8-8z"/></svg>
+    <!-- Sparkle -->
+    <svg viewBox="0 0 24 24"><path d="M12 2L13.09 8.26L22 9L13.09 9.74L12 16L10.91 9.74L2 9L10.91 8.26L12 2Z"/></svg>
+  </div>
+
+  <p id="pesan">
+    Buat pacar paling cantik sedunia<br>
+    Makasih udah jadi rumah ternyaman aku<br>
+    I love you lebih dari kata-kata bisa jelasin
+  </p>
+
+  <button class="btn" onclick="ubahPesan()">Jangan diklik</button>
+</div>
+
+<script>
+  const pesanList = [
+    "Kamu itu alasan aku senyum tiap hari",
+    "Frenkkkkkk🤪",
+    "Serius deh, bayar tapi",
+    "1 Agustus = hari buat ngingetin kalau aku sayang kamu banget",
+    "Makasih udah jadi tempat paling nyaman buat aku",
+    "btw ada 200k ga",
+    "pi boonk🤪🤪🤪"
+  ];
+  let i = 0;
+  function ubahPesan() {
+    document.getElementById('pesan').innerHTML = pesanList[i];
+    i = (i + 1) % pesanList.length;
+  }
+</script>
+
+</body>
+  </html>
